@@ -115,3 +115,19 @@ div img {
   margin-bottom: 1.25em;
   margin-top: 1.25em;
 }
+
+/* Archive Case Study Page */
+
+.case-study-sidebar h4 {
+  font: 500 0.75em 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color :#a6a6a6;
+  margin-top: 0.75em;
+  padding-bottom: 1.50em;
+}
+
+div.case-study-images img {
+  width: 100%;
+  height: auto;
+  padding: 1.25em;
+}
+
