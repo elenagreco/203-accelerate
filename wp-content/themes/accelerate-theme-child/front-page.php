@@ -16,10 +16,12 @@ get_header(); ?>
 
 	<div id="primary" class="home-page hero-content">
 		<div class="main-content" role="main">
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="hero-text">
+				<?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
-				<a class="button" href="<?php echo site_url('/case-studies/') ?>">View Our Work</a>
 			<?php endwhile; // end of the loop. ?>
+		</div>
+			<a class="button" href="<?php echo site_url('/case-studies/') ?>">View Our Work</a>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
@@ -58,6 +60,20 @@ get_header(); ?>
 					<?php endwhile; ?> 
 				<?php wp_reset_query(); ?>
 		</div>
+		<div class="twitter-module">
+			<h4>Recent Tweets</h4>
+			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+			<div id="secondary" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				<div class="follow-us">
+					<a href="https://twiiter.com/neilpatel">Follow Us ></a>
+				</div>
+			</div>
+			<?php endif; ?>
+		</div>
+
  </div>
 </section>
+
+
 <?php get_footer(); ?>

@@ -18,8 +18,13 @@ Text Domain:  accelerate-theme-child
   background: none repeat scroll 0 0 #45ac9d;
 }
 
+.hero-text {
+  margin-bottom: 5em;
+  clear: auto;
+}
 .button {
   background: #45ac9d;
+  margin-top: 5em;
 }
 
 .site-content {
@@ -28,9 +33,10 @@ Text Domain:  accelerate-theme-child
   margin: 0 auto;
 }
 
+/* Featured Work */
+
 .featured-work {
   width: 100%;
-  
 }
 
 .featured-work h4 {
@@ -61,6 +67,12 @@ Text Domain:  accelerate-theme-child
   width: 31%;
   margin: 0.75% 1.15% 1.15% 1.15%;
 
+}
+
+/* Blog */
+
+.recent-posts {
+  margin-top: 2em;
 }
 
 .blogpost {
@@ -94,6 +106,56 @@ Text Domain:  accelerate-theme-child
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+.twitter-module {
+  width: 50%;
+  float: left;
+  display: block;
+  padding-left: 2em;
+  margin-bottom: 2em;
+  clear: auto;
+}
+
+.twitter-module h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 1em 0;
+}
+
+#secondary .widget-area {
+  float: left;
+  padding-bottom: 5em;
+}
+
+ul.tweets {
+  margin-left: 0;
+}
+
+.twitter-module li {
+  list-style: none;
+  font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+}
+
+.follow-us {
+  font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+  text-transform: uppercase;
+  padding-top: 5em;
+}
+
+/* Blog Page Sidebar */
+
+.newsletter-label label{
+  font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #333;
+}
+
+.signup-button input {
+  background: #45ac9d;
+}
+/* Single Case Study Page */
 
 .case-study {
   width: 100%;
@@ -131,3 +193,146 @@ div.case-study-images img {
   padding: 1.25em;
 }
 
+/* Contact Us Page */
+
+div.main-content {
+  width: 80%;
+  margin: 0 10%;
+  
+}
+
+div.main-content p {
+  color: #333;
+}
+
+#nf-field-1-container, #nf-field-2-container {
+  width: 48%;
+  display: inline-block;
+}
+
+#nf-field-2-container {
+  margin-left: 3%;
+}
+
+#nf-label-field-1, #nf-label-field-2, #nf-label-field-3 {
+  color: #333;
+  font-weight: 400;
+}
+
+#nf-field-4 {
+  float: right;
+  background-color: #45ac9d;
+  color: white;
+}
+
+/* About Page */
+
+.about-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+  height: auto;
+  margin: 0 0 5em;
+  padding: 5em 0;
+}
+
+.hero-content h3 {
+  width: 50%;
+  margin: auto 25%;
+}
+
+.services-section-header {
+  width: 40%;
+  margin: auto 30%;
+  padding-bottom: 2em;
+}
+
+.our-services-header {
+  font-size: 1em;
+  text-align: center;
+}
+
+.our-services-subheader {
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.service-items {
+  width: 100%;
+}
+
+.individual-service {
+  display: flex;
+  flex-direction: row;
+}
+
+.service-description{
+  text-align: left;
+  float: left;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.service-description h2 {
+  font-size: 1em;
+}
+
+.service-description p {
+  font-size: 0.75em;
+}
+
+.service-image {
+  width: 25%;
+  margin: 0 auto;
+  float: right;
+}
+
+.work-with-us {
+  width: 100%;
+  border-top: 1px solid #bfbfbf;
+  display: block;
+  padding: 2em 0;
+}
+
+.work-with-us-text {
+  width: 60%;
+  text-align: center;
+  padding: 0 1em;
+  margin: 2em 0;
+  float: left;
+}
+
+.about-contact {
+  width: 40%;
+  margin: 3em 0;
+  float: left;
+}
+
+.contact-button {
+  width: 25%;
+}
+
+/* 404 Page */
+
+/*
+.map-image {
+  width: 30%;
+  float: left;
+}
+*/
+.wrong-turn-description {
+  width: 100%;
+}
+
+.wrong-turn-description h1 {
+  font: 700 2em 'Nunito', 'Open Sans', Arial, sans-serif;
+  color: #45ac9d;
+}
+
+.wrong-turn-description p {
+  font: 500 1.25em 'Nunito', 'Open Sans', Arial, sans-serif;
+  color :#a6a6a6;
+  line-height: 1.5em;
+}
+.wrong-turn-description a {
+  color: #45ac9d;
+}
