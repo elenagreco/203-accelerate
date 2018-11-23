@@ -159,6 +159,7 @@ ul.tweets {
 
 .case-study {
   width: 100%;
+  margin-top: 2em;
 }
 
 .case-study-sidebar {
@@ -198,7 +199,6 @@ div.case-study-images img {
 div.main-content {
   width: 80%;
   margin: 0 10%;
-  
 }
 
 div.main-content p {
@@ -257,16 +257,18 @@ div.main-content p {
 
 .service-items {
   width: 100%;
+  padding-bottom: 2em;
 }
 
 .individual-service {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.service-description{
+.service-description {
   text-align: left;
-  float: left;
   width: 75%;
   margin: 0 auto;
   padding: 0 2em;
@@ -280,10 +282,13 @@ div.main-content p {
   font-size: 0.75em;
 }
 
-.service-image {
+.individual-service figure {
   width: 25%;
   margin: 0 auto;
-  float: right;
+}
+
+.individual-service:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .work-with-us {
@@ -313,12 +318,6 @@ div.main-content p {
 
 /* 404 Page */
 
-/*
-.map-image {
-  width: 30%;
-  float: left;
-}
-*/
 .wrong-turn-description {
   width: 100%;
 }

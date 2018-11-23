@@ -11,7 +11,7 @@
 get_header(); ?>
 
 	<div id="primary" class="site-content sidebar">
-		<div class="main-content" role="main">
+		<div class="case-study">
 			<?php while ( have_posts() ) : the_post(); 
         $services = get_field('services');
         $client = get_field('client');
@@ -19,7 +19,7 @@ get_header(); ?>
         $image_1 = get_field('image_1');
         $size = "full"; ?>
         
-        <article class="case-study">
+        
           <aside class="case-study-sidebar">
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <h4><?php echo $services; ?></h4>
@@ -33,7 +33,7 @@ get_header(); ?>
             } ?></a>
             
           </div>
-        </article>
+        
 
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->

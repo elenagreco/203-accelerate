@@ -25,14 +25,13 @@ get_header(); ?>
 					<p class="our-services-subheader"><?php the_field('our_services'); ?></p>
 
 			</div>
-			<ul class="service-items">
+			<div class="service-items">
 				<?php query_posts('posts_per_page=6&post_type=services'); ?>
 					<?php while ( have_posts() ) : the_post(); 
 							$image_1 = get_field('image_1');
 							$size = "thumbnail"; ?>
 
-							<article>
-								<div class="individual-service">
+							<article class="individual-service">
 									<div class="service-description">
 										<h2><?php the_title(); ?></h2>
 										<p><?php the_content(); ?></p>
@@ -42,12 +41,11 @@ get_header(); ?>
 										echo wp_get_attachment_image( $image_1, $size );
 									} ?></a>
 									</figure>
-								</div>
 							</article>
 								
 								<?php endwhile; // end of the loop ?> 
 					<?php wp_reset_query(); // resets the alterd query back to the original ?>
-			</ul>	
+			</div>	
 			
 			<div class="work-with-us">
 				<h2 class="work-with-us-text"><?php the_field('contact_us'); ?></h2>
