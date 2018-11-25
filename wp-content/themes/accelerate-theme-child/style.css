@@ -285,6 +285,9 @@ div.main-content p {
 .individual-service figure {
   width: 25%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .individual-service:nth-child(even) {
